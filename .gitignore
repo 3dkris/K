@@ -3,4 +3,5 @@
 !.vimrc
 !*.vim
 !.gitignore
+!create_vim_windows_symlinks.bat
 !/.vim/
