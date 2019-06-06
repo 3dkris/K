@@ -16,3 +16,5 @@ nnoremap <F10> :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
 nnoremap <F9> :exe "resize " . (winheight(0) * 2/3)<CR>
 nnoremap <F8> :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <M-t> :NERDTreeFocus<CR>
+
+"
