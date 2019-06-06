@@ -1,1 +1,1 @@
-# vim_prefs
+# A collection of my user directory preferences
