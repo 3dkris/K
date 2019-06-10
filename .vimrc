@@ -67,9 +67,11 @@ set ve+=onemore
 
 "HOTKEYS:
 vmap <c-Backspace> i<Home><backspace><Esc>
-imap <c-z> <Esc>
+imap <c-z> <Esc>ui
+nmap <c-z> <Esc>u
 imap <c-v> <Esc>"=pi
 vmap <c-c> "=y
+cmap <c-v> <c-r>"
 
 "...split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -97,5 +99,6 @@ autocmd FileType python imap <M-v> <Esc>iOOOOOOO = ""; print "\|", OOOOOOO, "=",
 autocmd FileType python map <C-3> I<home>#<Esc>
 
 "C++ Macros:
-autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>iauto *v = ; std::cout << "\|variable = " << " \| type = " << typeid(*v).name() << std::endl;<Esc>0wwwla
+"autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>iauto *v = ; std::cout << "\|variable = " << " \| type = " << typeid(*v).name() << std::endl;<Esc>0wwwla
+autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>0wy$istd::cout << "OOOOOO: <Esc>pi " << <Esc>pi << "  (type = " << typeid(<Esc>pi).name() << std::endl;<Esc>0wwwla
 autocmd FileType cpp,h,hpp,c,cc,hh map <C-3> I//<Esc>
