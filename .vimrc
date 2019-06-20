@@ -46,6 +46,7 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
+set smarttab
 
 "...Window Setup
 set winminwidth=0
@@ -86,7 +87,7 @@ nnoremap <m-k> 10<c-y>10k
 nnoremap <m-l> 20l
 
 "...tabbing
-imap <tab> <Esc>>>i
+imap <tab> <c-t>
 imap <S-Tab> <Esc><<i
 nmap <Tab> >>
 nmap <s-Tab> <<
