@@ -3,14 +3,29 @@
 call pathogen#infect()
 
 " \_ NERDTree
-let g:NERDTreeChDirMode       = 2
+let g:NERDTreeChDirMode= 2
+let NERDTreeShowBookmarks=1
 nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <M-t> :NERDTreeFocus<CR>
 
 " \_ CtrlP
 let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP cd'
+
+" \_Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
+let g:syntastic_cpp_checkers = ['cpplint']
+
+nnoremap <leader>n :lnext<CR>
+nnoremap <leader><S-N> :lprevious<CR>
 
 
 " SETTINGS:
@@ -31,9 +46,11 @@ augroup END
 set wildignore+=*.a,*.o
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
 set wildignore+=*.DS_Store,.git,.hg,.svn
-set wildignore+=*~,*.swp,*.tmp
+set wildignore+=*~,*.swp,*.tmp,*.pyc
 "...backups
-set nobackup nowritebackup
+set nobackup
+set nowritebackup
+set directory^=$HOME/vim_swp//
 
 "...Folding
 set foldmethod=indent
@@ -47,6 +64,9 @@ set expandtab
 set autoindent
 set fileformat=unix
 set smarttab
+
+"...remove trailing white space on lines before saving
+autocmd BufWritePre * %s/\s\+$//e
 
 "...Window Setup
 set winminwidth=0
@@ -65,6 +85,10 @@ nmap <Enter> i<Enter><Esc>
 "...Allow cursor to go one space past end of line like regular editors
 set ve+=onemore
 
+
+"status line
+set laststatus=2
+set statusline+=%F
 
 "HOTKEYS:
 vmap <c-Backspace> i<Home><backspace><Esc>
