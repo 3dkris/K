@@ -14,19 +14,21 @@ let g:ctrlp_cmd = 'CtrlP cd'
 
 " \_Syntastic
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {"mode": "passive"}
 
 let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_cpp_checkers = ['cpplint']
 
 nnoremap <leader>n :lnext<CR>
 nnoremap <leader><S-N> :lprevious<CR>
-
+nnoremap <leader>l :SyntasticCheck<CR>
+nnoremap <leader><S-l> :SyntasticReset<CR>
 
 " SETTINGS:
 "...UI Colors
@@ -125,5 +127,7 @@ autocmd FileType python map <C-3> I<home>#<Esc>
 
 "C++ Macros:
 "autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>iauto *v = ; std::cout << "\|variable = " << " \| type = " << typeid(*v).name() << std::endl;<Esc>0wwwla
-autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>0wy$istd::cout << "OOOOOO: <Esc>pi " << <Esc>pi << "  (type = " << typeid(<Esc>pi).name() << std::endl;<Esc>0wwwla
-autocmd FileType cpp,h,hpp,c,cc,hh map <C-3> I//<Esc>
+"autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>0wy$istd::cout << "OOOOOO: <Esc>pi " << <Esc>pi << "  (type = " << typeid(<Esc>pi).name() << std::endl;<Esc>0wwwla
+
+autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>istd::cout << << "\n";<Esc>
+"autocmd FileType cpp,h,hpp,c,cc,hh map <C-3> I//<Esc>
