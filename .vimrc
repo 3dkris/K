@@ -43,6 +43,9 @@ augroup BgHighlight
     autocmd WinLeave * set colorcolumn=0
 augroup END
 
+"...windows behaviour
+source $VIMRUNTIME/mswin.vim
+behave mswin
 
 "...Auto Complete
 set wildignore+=*.a,*.o
@@ -67,6 +70,7 @@ set autoindent
 set fileformat=unix
 set smarttab
 
+
 "...remove trailing white space on lines before saving
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -80,7 +84,9 @@ set ruler
 
 
 "...Misc
+filetype on
 set nocompatible
+set hlsearch
 set bs=2
 nmap <Enter> i<Enter><Esc>
 
@@ -94,11 +100,6 @@ set statusline+=%F
 
 "HOTKEYS:
 vmap <c-Backspace> i<Home><backspace><Esc>
-imap <c-z> <Esc>ui
-nmap <c-z> <Esc>u
-imap <c-v> <Esc>"=pi
-vmap <c-c> "=y
-cmap <c-v> <c-r>"
 
 "...split navigations
 nnoremap <C-J> <C-W><C-J>
@@ -108,9 +109,14 @@ nnoremap <C-H> <C-W><C-H>
 
 "...navigation
 nnoremap <m-h> 20h
-nnoremap <m-j> 10<c-e>10j
-nnoremap <m-k> 10<c-y>10k
+nnoremap <m-j> 20<c-e>20jzz
+nnoremap <m-k> 20<c-y>20kzz
 nnoremap <m-l> 20l
+vmap <m-h> 20h
+vmap <m-j> 20<c-e>20jzz
+vmap <m-k> 20<c-y>20kzz
+vmap <m-l> 20l
+
 
 "...tabbing
 imap <tab> <c-t>
@@ -124,6 +130,8 @@ vmap <s-Tab> <<gv
 "Python Macros:
 autocmd FileType python imap <M-v> <Esc>iOOOOOOO = ""; print "\|", OOOOOOO, "=", eval(OOOOOOO), "\| type =", type(eval(OOOOOOO)), "\|"<Esc>20ba
 autocmd FileType python map <C-3> I<home>#<Esc>
+" \_Commenter
+autocmd FileType python setlocal commentstring=#%s
 
 "C++ Macros:
 "autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>iauto *v = ; std::cout << "\|variable = " << " \| type = " << typeid(*v).name() << std::endl;<Esc>0wwwla
@@ -131,3 +139,5 @@ autocmd FileType python map <C-3> I<home>#<Esc>
 
 autocmd FileType cpp,h,hpp,c,cc,hh imap <M-v> <Esc>istd::cout << << "\n";<Esc>
 "autocmd FileType cpp,h,hpp,c,cc,hh map <C-3> I//<Esc>
+
+
