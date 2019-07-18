@@ -96,7 +96,8 @@ set ve+=onemore
 
 "status line
 set laststatus=2
-set statusline+=%F
+set statusline=
+set statusline+=%f
 
 "HOTKEYS:
 vmap <c-Backspace> i<Home><backspace><Esc>
@@ -108,15 +109,30 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "...navigation
-nnoremap <m-h> 20h
-nnoremap <m-j> 20<c-e>20jzz
-nnoremap <m-k> 20<c-y>20kzz
-nnoremap <m-l> 20l
-vmap <m-h> 20h
-vmap <m-j> 20<c-e>20jzz
-vmap <m-k> 20<c-y>20kzz
-vmap <m-l> 20l
+nnoremap <m-h> b
+nnoremap <m-j> 20jzz
+nnoremap <m-k> 20kzz
+nnoremap <m-l> w
 
+nnoremap <s-h> vh
+nnoremap <s-j> vj
+nnoremap <s-k> vk
+nnoremap <s-l> vl
+
+vnoremap <m-h> b
+vnoremap <m-j> 20jzz
+vnoremap <m-k> 20kzz
+vnoremap <m-l> w
+
+vmap <s-h> h
+vmap <s-j> j
+vmap <s-k> k
+vmap <s-l> l
+
+imap <m-h> <Esc>h
+imap <m-j> <Esc>j
+imap <m-k> <Esc>k
+imap <m-l> <Esc>l
 
 "...tabbing
 imap <tab> <c-t>
@@ -126,6 +142,16 @@ nmap <s-Tab> <<
 vmap <Tab> >>gv
 vmap <s-Tab> <<gv
 
+"...search
+inoremap <c-f> <Esc>"fyiw/
+nnoremap <c-f> "fyiw/
+vnoremap <c-f> "fy/<C-r>f
+
+"...search and replace
+imap <c-r> <Esc>:%s///gc<left><left><left><left>
+nmap <c-r> :%s///gc<left><left><left><left>
+xmap <c-r> "fyiw:%s/<C-r>f/<C-r>f/gc<left><left><left>
+smap <c-r> <Esc><Esc>gv"fy<Esc>:%s/<C-r>f/<C-r>f/gc<left><left><left>
 
 "Python Macros:
 autocmd FileType python imap <M-v> <Esc>iOOOOOOO = ""; print "\|", OOOOOOO, "=", eval(OOOOOOO), "\| type =", type(eval(OOOOOOO)), "\|"<Esc>20ba
