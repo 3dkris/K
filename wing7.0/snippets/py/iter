@@ -1,0 +1,2 @@
+|m|for %(item)s in %(iter)s:
+	|!|

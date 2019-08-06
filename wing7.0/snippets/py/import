@@ -1,0 +1,1 @@
+import %(module||.)s as %(module||.)s        ;reload(%(module||.)s) |!|
