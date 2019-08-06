@@ -1,0 +1,7 @@
+|m|try:
+	|!|
+except %(!var1||Key_Error)s as e:
+	print "%(!var2||Error)s {}: {}".format(e.errno, e.strerror)
+except:
+	print("%(!var3||Unexpected error!)s")
+	raise

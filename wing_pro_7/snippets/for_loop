@@ -1,0 +1,3 @@
+|m|for (int i=0; i<%(arguments||10)s; i++) {
+    |!|
+}

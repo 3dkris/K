@@ -1,0 +1,5 @@
+|m|@%(decorator)s
+def %(name)s(%(arguments)s):
+	"""%(doc)s"""
+	|!|
+

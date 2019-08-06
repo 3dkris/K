@@ -1,0 +1,5 @@
+|m|with open(%(!argument1||file_path)s) as file_:
+    %(!argument2||file_contents)s = file.read()
+    f.write(%(!argument2||item)s)
+    for line in file_:
+        print line,|!|

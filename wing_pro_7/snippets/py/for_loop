@@ -1,0 +1,2 @@
+|m|for %(!arguments||item)s in %(!arguments||items)s:
+	|!|

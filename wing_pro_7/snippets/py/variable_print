@@ -1,0 +1,1 @@
+|m|OOOOOOO = "%(arg1||myVaribale)s"; print('{}= {}    #{}'.format(OOOOOOO, str(eval(OOOOOOO)), str(type(eval(OOOOOOO)))))

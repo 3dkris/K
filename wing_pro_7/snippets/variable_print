@@ -1,0 +1,1 @@
+|m|std::cout << "%(arguments||myVaribale)s:" << %(arguments||myVaribale)s << std::endl;
