@@ -1,2 +1,0 @@
-|m|def %(fct_name)s(%(arg_list|string(512))s):
-	|!|

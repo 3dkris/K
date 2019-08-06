@@ -1,4 +1,0 @@
-|m|try:
-	|!|
-except%(except_type)s:
-	%(except_clause)s

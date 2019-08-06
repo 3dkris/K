@@ -1,2 +1,0 @@
-|m|for %(idx|string|i)s, %(item)s in enumerate(%(iter)s):
-	|!|

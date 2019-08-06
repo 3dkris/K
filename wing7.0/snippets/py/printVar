@@ -1,1 +1,0 @@
-|m|OOOOOOO = "%(arguments||myVaribale)s"; print '%s= ' % OOOOOOO, eval(OOOOOOO), ' #', type(eval(OOOOOOO))
