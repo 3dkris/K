@@ -124,9 +124,12 @@ gui.keymap-override = {'Alt-1': '',
                        'Ctrl-F': 'search()',
                        'Ctrl-H': 'move-editor-focus-previous',
                        'Ctrl-L': 'move-editor-focus',
+                       'Ctrl-Q': '',
                        'Ctrl-Semicolon': 'command-by-name',
                        'Ctrl-W': '',
                        'Ctrl-W Ctrl-A': 'toggle-vertical-tools()',
+                       'Ctrl-W Ctrl-B': 'show-panel(panel_type="bookmarks")',
+                       'Ctrl-W Ctrl-C': 'show-panel(panel_type="browser")',
                        'Ctrl-W Ctrl-F': 'show-panel(panel_type="project")',
                        'Ctrl-W Ctrl-S': 'toggle-horizontal-tools()',
                        'Ctrl-W Ctrl-W': 'hide-vertical-tools(), hide-horizon'\
@@ -151,4 +154,3 @@ main.last-properties-pages = {'CDirectoryProperties': 0,
                               'CProjectPropertiesDialog': 2}
 main.perspective-auto-save = 'never'
 main.prefs-version = 7
-proj.follow-editor = True
