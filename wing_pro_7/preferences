@@ -1,5 +1,6 @@
 [user-preferences]
 edit.auto-edit-close = False
+edit.auto-edit-parens = False
 edit.autocomplete-keys = ['return']
 edit.background-color = (0,
                          0,
@@ -18,6 +19,9 @@ edit.occurrence-color = (120,
 edit.qt-bookmark-color = (39,
                           10,
                           64)
+edit.qt-show-edge-markers = (1,
+                             80,
+                             None)
 edit.show-indent-guides = True
 edit.show-line-numbers = True
 edit.show-python-indent-warnings = False
@@ -148,8 +152,8 @@ gui.typing-group-timeout = 2.0
 gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
 main.auto-rstrip-on-save = 'on-save'
-main.last-prefs-page = (0,
-                        3)
+main.last-prefs-page = (3,
+                        4)
 main.last-properties-pages = {'CDirectoryProperties': 0,
                               'CProjectPropertiesDialog': 2}
 main.perspective-auto-save = 'never'

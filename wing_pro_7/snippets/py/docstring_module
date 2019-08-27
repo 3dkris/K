@@ -1,0 +1,23 @@
+"""Short Description.
+
+Long Description. Docstrings may extend over multiple lines. Sections are
+created with a section header and a colon followed by a block of indented text.
+
+Example:
+	Examples can be given using either the ``Example`` or ``Examples``
+	sections. Sections support any reStructuredText formatting, including
+	literal blocks::
+
+		print("hello world")
+
+Section breaks are created by resuming unindented text. Section breaks
+are also implicitly created anytime a new section starts.
+
+Attributes:
+	GLOBAL_VAR_1 (int): example variable existing at the module level. Example
+	    of description carring to next line
+
+Todo:
+	* For module TODOs
+
+"""
