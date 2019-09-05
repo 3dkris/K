@@ -1,0 +1,29 @@
+	"""Short description.
+
+	Long description
+
+	Properties created with the ``@property`` decorator should be documented
+	in the property's getter method.
+
+	Args:
+		param1 (int): The first parameter.
+		param2 (str, optional): The second parameter. Defaults to None.
+			Second line of description should be indented.
+		*args: Variable length argument list. Describe purpose.
+		**kwargs: Arbitrary keyword arguments. Describe purpose.
+
+	Attributes:
+		attr1 (str): Description of `attr1`.
+		attr2 (int): Description of `attr2`. None if param2 is
+		    not passed to __init__
+
+	Example:
+		Here is how to create an instance of this class::
+
+			>>> inst = class(8, param2='value')
+
+		Example of using this object::
+
+			>>> inst.attr2 += 3
+
+	"""

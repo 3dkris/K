@@ -1,0 +1,32 @@
+	"""Short description
+
+	Long Description (if needed).
+
+	Args:
+		param1 (int): The first parameter.
+		param2 (str, optional): The second parameter. Defaults to None.
+			Second line of description should be indented.
+		*args: Variable length argument list. Describe purpose.
+		**kwargs: Arbitrary keyword arguments. Describe purpose.
+
+	Returns:
+		dict: returns populated dictionary.
+
+		Example of returned value::
+			{
+				'param1': param1,
+				'param2': param2
+			}
+
+	Raises:
+		AttributeError: The ``Raises`` section is a list of all exceptions
+			that are relevant to the interface.
+		ValueError: If `param2` is equal to `param1`.
+
+	Examples:
+		Here is how to use this function::
+
+			>>> print thisFunc(2, 'aa')
+			{'param1': 2, 'param2': 'aa'}
+
+	"""

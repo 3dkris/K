@@ -13,6 +13,10 @@ edit.caret-line-highlight = ((144,
                               192,
                               116),
                              33)
+edit.context-menu-custom-items = (('New File',
+                                   'new-file'),
+                                  ('Preferences',
+                                   'show-preferences-gui'))
 edit.occurrence-color = (120,
                          27,
                          27)
@@ -135,6 +139,7 @@ gui.keymap-override = {'Alt-1': '',
                        'Ctrl-W Ctrl-B': 'show-panel(panel_type="bookmarks")',
                        'Ctrl-W Ctrl-C': 'show-panel(panel_type="browser")',
                        'Ctrl-W Ctrl-F': 'show-panel(panel_type="project")',
+                       'Ctrl-W Ctrl-L': 'show-panel-code-warnings ',
                        'Ctrl-W Ctrl-S': 'toggle-horizontal-tools()',
                        'Ctrl-W Ctrl-W': 'hide-vertical-tools(), hide-horizon'\
         'tal-tools()',
@@ -152,9 +157,10 @@ gui.typing-group-timeout = 2.0
 gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
 main.auto-rstrip-on-save = 'on-save'
-main.last-prefs-page = (3,
+main.last-prefs-page = (0,
                         4)
 main.last-properties-pages = {'CDirectoryProperties': 0,
-                              'CProjectPropertiesDialog': 2}
+                              'CProjectPropertiesDialog': 0,
+                              'CStartDebugProperties': 0}
 main.perspective-auto-save = 'never'
 main.prefs-version = 7
