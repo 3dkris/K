@@ -1,6 +1,7 @@
 [user-preferences]
 edit.auto-edit-close = False
 edit.auto-edit-parens = False
+edit.auto-edit-quotes = False
 edit.autocomplete-keys = ['return']
 edit.background-color = (0,
                          0,
@@ -13,7 +14,13 @@ edit.caret-line-highlight = ((144,
                               192,
                               116),
                              33)
-edit.context-menu-custom-items = (('New File',
+edit.context-menu-custom-items = (('showMenu',
+                                   'show-toolbar'),
+                                  ('whiteSpace-on',
+                                   'show-whitespace'),
+                                  ('whiteSpace-off',
+                                   'hide-all-whitespace'),
+                                  ('New File',
                                    'new-file'),
                                   ('Preferences',
                                    'show-preferences-gui'))
@@ -28,7 +35,6 @@ edit.qt-show-edge-markers = (1,
                              None)
 edit.show-indent-guides = True
 edit.show-line-numbers = True
-edit.show-python-indent-warnings = False
 edit.syntax-formatting = {'PYTHON': {u'character': {'bold': True,
         'fore': '#009600'},
                                      u'classname': {'fore': '#FFEE00'},
@@ -45,6 +51,7 @@ edit.syntax-formatting = {'PYTHON': {u'character': {'bold': True,
                                      'word': {'fore': '#6CD1FF'},
                                      'word2': {'fore': '#6CD1FF'}}}
 edit.tab-size = 4
+edit.use-indent-analysis = 'never'
 gui.icon-color-primary = (0,
                           0,
                           0)
@@ -145,6 +152,7 @@ gui.keymap-override = {'Alt-1': '',
         'tal-tools()',
                        'Ctrl-W S': 'toggle-horizontal-tools()',
                        'Ctrl-W V': 'split-horizontally(new=0)'}
+gui.last-feedback-shown = 1584351783.889
 gui.qt-color-palette = u'black-background'
 gui.qt-text-selection-color = (109,
                                87,
@@ -157,8 +165,8 @@ gui.typing-group-timeout = 2.0
 gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
 main.auto-rstrip-on-save = 'on-save'
-main.last-prefs-page = (0,
-                        4)
+main.last-prefs-page = (3,
+                        12)
 main.last-properties-pages = {'CDirectoryProperties': 0,
                               'CProjectPropertiesDialog': 0,
                               'CStartDebugProperties': 0}
