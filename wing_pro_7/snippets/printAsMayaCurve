@@ -1,0 +1,3 @@
+std::cout << "cmds.curve( p=("
+	<< point1 << ","
+	<< "), )" << std::endl;

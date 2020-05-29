@@ -1,0 +1,2 @@
+std::cout << "cmds.xform(cmds.spaceLocator()[0], ws=1, m="
+    << matrix << ")" << std::endl;

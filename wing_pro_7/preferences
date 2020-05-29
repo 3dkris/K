@@ -166,8 +166,9 @@ gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
 main.auto-rstrip-on-save = 'on-save'
 main.last-prefs-page = (3,
-                        12)
+                        -1)
 main.last-properties-pages = {'CDirectoryProperties': 0,
+                              'CFilePropertiesDialog': 0,
                               'CProjectPropertiesDialog': 0,
                               'CStartDebugProperties': 0}
 main.perspective-auto-save = 'never'
