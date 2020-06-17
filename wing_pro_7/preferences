@@ -165,8 +165,8 @@ gui.typing-group-timeout = 2.0
 gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
 main.auto-rstrip-on-save = 'on-save'
-main.last-prefs-page = (3,
-                        -1)
+main.last-prefs-page = (1,
+                        0)
 main.last-properties-pages = {'CDirectoryProperties': 0,
                               'CFilePropertiesDialog': 0,
                               'CProjectPropertiesDialog': 0,
