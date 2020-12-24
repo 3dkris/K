@@ -1,0 +1,4 @@
+|m|PRINT_CURVE_DATA
+	<< " %(struct||curve)s.%(var||position)s[%(i||i)s]: " << %(struct||curve)s.%(var||position)s[%(i||i)s]
+	<< " %(localVar||localVar)s: " << %(localVar||localVar)s
+	<< PRINT_CURVE_DATA_END

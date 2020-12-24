@@ -154,6 +154,7 @@ gui.keymap-override = {'Alt-1': '',
                        'Ctrl-W V': 'split-horizontally(new=0)'}
 gui.last-feedback-shown = 1584351783.889
 gui.qt-color-palette = u'black-background'
+gui.qt-display-font = u'Lucida Sans Unicode,12'
 gui.qt-text-selection-color = (109,
                                87,
                                87)
@@ -164,9 +165,10 @@ gui.toolbar-icon-style = 'text-only'
 gui.typing-group-timeout = 2.0
 gui.use-notebook-editors = False
 gui.use-palette-throughout-ui = True
+guimgr.show-menu-bar = False
 main.auto-rstrip-on-save = 'on-save'
-main.last-prefs-page = (1,
-                        0)
+main.last-prefs-page = (0,
+                        2)
 main.last-properties-pages = {'CDirectoryProperties': 0,
                               'CFilePropertiesDialog': 0,
                               'CProjectPropertiesDialog': 0,
